@@ -19,7 +19,7 @@ def get_password():
     return 'enter your password here!'
 
 #Funções principais
-def get_series_from_api(first_date: str, last_date: str, series_id: list):
+def get_series(first_date: str, last_date: str, series_id: list):
     print('Iniciando aquisição dos dados da API do BCCch...')
     final_df = pd.DataFrame()
     for i in series_id:  
