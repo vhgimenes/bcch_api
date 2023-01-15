@@ -1,6 +1,7 @@
 """
+Author: Victor Gimenes
+Date: 24/05/2022
 Módulo responsável por extrair as séries de dados de Encuesta Economicas do Banco Central do Chile.
-#!É necessário que de tempos em tempos os dicts com as series_ids sejam atualizados para aquisição dos dados mais recentes!
 """
 
 #Importando módulos
@@ -12,10 +13,10 @@ from datetime import datetime
 
 #Funções auxiliares
 def get_user():
-    return '202193'
+    return 'enter your user here!'
 
 def get_password():
-    return 'wjd5mOSTSH1c'
+    return 'enter your password here!'
 
 #Funções principais
 def get_series_from_api(first_date: str, last_date: str, series_id: list):
